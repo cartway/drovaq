@@ -17,7 +17,7 @@ export async function proxy(request: NextRequest) {
     if (
       request.nextUrl.pathname.startsWith('/login') ||
       request.nextUrl.pathname.startsWith('/signup') ||
-      request.nextUrl.pathname.startsWith('/discovery') ||
+      // request.nextUrl.pathname.startsWith('/discovery') ||
       // request.nextUrl.pathname.startsWith("/vendor/onboarding") ||
       // request.nextUrl.pathname.startsWith("/vendor/sign-up") ||
       request.nextUrl.pathname.startsWith('/forgot-password') ||

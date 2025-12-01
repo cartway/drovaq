@@ -467,6 +467,50 @@ export type Database = {
           },
         ]
       }
+      companies: {
+        Row: {
+          color: string
+          created_at: string
+          id: string
+          landing_page: string | null
+          location: string
+          logo: string
+          name: string
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          color: string
+          created_at?: string
+          id?: string
+          landing_page?: string | null
+          location: string
+          logo: string
+          name: string
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          color?: string
+          created_at?: string
+          id?: string
+          landing_page?: string | null
+          location?: string
+          logo?: string
+          name?: string
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "companies_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "users"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       coupons: {
         Row: {
           applicable_user_type:
