@@ -1,53 +1,24 @@
 {
-  "name": "drovaq",
-  "version": "0.1.0",
+  "name": "test",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "typegen": "supabase gen types typescript --project-id kqqzjraghddbtdqcuauu --schema public > ./utils/supabase/supabase.ts"
-  },
-  "dependencies": {
-    "@ark-ui/react": "^5.29.1",
-    "@bprogress/next": "^3.2.12",
-    "@hookform/resolvers": "^5.2.2",
-    "@radix-ui/react-slot": "^1.2.4",
-    "@supabase-cache-helpers/postgrest-react-query": "^1.13.6",
-    "@supabase/ssr": "^0.8.0",
-    "@supabase/supabase-js": "^2.86.0",
-    "@tanstack/react-table": "^8.21.3",
-    "axios": "^1.13.2",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "jwt-decode": "^4.0.0",
-    "next": "16.0.6",
-    "next-themes": "^0.4.6",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "react-hook-form": "^7.67.0",
-    "react-icons": "^5.5.0",
-    "tailwind-merge": "^3.4.0",
-    "tailwind-scrollbar-hide": "^4.0.0",
-    "zod": "^4.1.13"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.0.6",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-config-turbo": "^2.6.1",
-    "eslint-plugin-prettier": "^5.5.4",
-    "eslint-plugin-unused-imports": "^4.3.0",
     "prettier": "^3.7.3",
-    "prettier-plugin-tailwindcss": "^0.7.1",
-    "supabase": "^2.64.1",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  }
+    "turbo": "^2.6.1",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@11.6.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
