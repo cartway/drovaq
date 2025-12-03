@@ -2,8 +2,7 @@ import { createClient } from './client';
 import { FileExtension } from './types';
 
 export const STORAGE_BUCKET = {
-  PAYMENT_PROOF: process.env.NEXT_PUBLIC_PAYMENT_PROOF!,
-  USER_DOCS: process.env.NEXT_PUBLIC_USER_DOCS!,
+  DROVAC_BUCKET: process.env.NEXT_PUBLIC_DROVAC_BUCKET!,
 } as const;
 
 type BucketTypes = (typeof STORAGE_BUCKET)[keyof typeof STORAGE_BUCKET];
