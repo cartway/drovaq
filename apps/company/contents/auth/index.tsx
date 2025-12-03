@@ -5,7 +5,7 @@ import { FC } from 'react';
 const LoginPageContent: FC = () => {
   return (
     <div>
-      <div></div>
+      <div>new</div>
     </div>
   );
 };
