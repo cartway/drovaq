@@ -12,7 +12,7 @@ export const signUp = async (
 
   if (payload.id_document) {
     uploadPromises.push(
-      uploadImage(payload.id_document, STORAGE_BUCKET.USER_DOCS)
+      uploadImage(payload.id_document, STORAGE_BUCKET.DROVAC_BUCKET)
     );
   } else {
     uploadPromises.push(Promise.resolve(undefined));
@@ -20,7 +20,7 @@ export const signUp = async (
 
   if (payload.cac_certificate) {
     uploadPromises.push(
-      uploadImage(payload.cac_certificate, STORAGE_BUCKET.USER_DOCS)
+      uploadImage(payload.cac_certificate, STORAGE_BUCKET.DROVAC_BUCKET)
     );
   } else {
     uploadPromises.push(Promise.resolve(undefined));
