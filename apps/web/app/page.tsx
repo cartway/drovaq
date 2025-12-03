@@ -1,4 +1,13 @@
-const Home = () => {
-  return <div></div>;
+import { Metadata } from 'next';
+
+import { LandingPageContent } from '@/contents/home/landing';
+
+export const metadata: Metadata = {
+  title: 'Login | Drovaq',
 };
-export default Home;
+
+const LoginPage = ({ params, searchParams }: PageProps<'/'>) => {
+  return <LandingPageContent />;
+};
+
+export default LoginPage;

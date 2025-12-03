@@ -1,6 +1,7 @@
-import { jwtDecode } from '@repo/ui';
 import { SupabaseJWTPayload } from '@repo/ui/services';
 import { createClientServer, updateSession } from '@repo/ui/utils';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { jwtDecode } from 'jwt-decode';
 import { NextResponse, type NextRequest } from 'next/server';
 
 export async function proxy(request: NextRequest) {
