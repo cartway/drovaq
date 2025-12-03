@@ -1,8 +1,7 @@
 import { jwtDecode } from '@repo/ui';
+import { SupabaseJWTPayload } from '@repo/ui/services';
 import { createClientServer, updateSession } from '@repo/ui/utils';
 import { NextResponse, type NextRequest } from 'next/server';
-
-import { SupabaseJWTPayload } from '../../packages/ui/src/services/auth/types';
 
 export async function proxy(request: NextRequest) {
   const supabase = await createClientServer();

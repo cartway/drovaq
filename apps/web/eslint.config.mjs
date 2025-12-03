@@ -104,7 +104,7 @@ const eslintConfig = defineConfig([
       'turbo/no-undeclared-env-vars': [
         'error',
         {
-          allowList: ['NODE_ENV'],
+          allowList: ['NODE_ENV', 'RESEND_API_KEY'],
         },
       ],
     },
