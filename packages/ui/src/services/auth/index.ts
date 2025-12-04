@@ -1,4 +1,6 @@
-import { createClient, STORAGE_BUCKET, uploadImage } from '../../utils';
+'use server';
+
+import { createClientServer, STORAGE_BUCKET, uploadImage } from '../../utils';
 import { SignupPayload, UserRole } from './types';
 
 export const signUp = async (
@@ -6,7 +8,8 @@ export const signUp = async (
   role: UserRole,
   redirOrigin: string
 ) => {
-  const supabase = createClient();
+  // 👇 Added 'await' here
+  const supabase = await createClientServer();
 
   const uploadPromises: Promise<string | undefined>[] = [];
 
@@ -36,23 +39,18 @@ export const signUp = async (
       emailRedirectTo: `${redirOrigin}/auth/confirm`,
       data: {
         role,
-
         first_name: payload.first_name,
         last_name: payload.last_name,
         phone: payload.phone,
-
         id_type: payload.id_type || null,
         id_document_url: id_document_url || null,
         vehicle_make: payload.vehicle_make || null,
         license_plate_number: payload.license_plate_number || null,
-
         business_name: payload.business_name || null,
         cac_certificate_url: cac_certificate_url || null,
       },
     },
   });
-
-  // data.user.
 
   if (error) {
     console.error(error.code + ' ' + error.message);
@@ -69,7 +67,8 @@ export const logIn = async ({
   email: string;
   password: string;
 }) => {
-  const supabase = createClient();
+  // 👇 Added 'await' here
+  const supabase = await createClientServer();
   const { error, data } = await supabase.auth.signInWithPassword({
     email,
     password,
@@ -83,15 +82,18 @@ export const logIn = async ({
   return data;
 };
 
-export const resendConfirmationEmail = async (email: string) => {
-  const supabase = createClient();
+export const resendConfirmationEmail = async (email: string, origin: string) => {
+  // 👇 Added 'await' here
+  const supabase = await createClientServer();
+  
   const { error } = await supabase.auth.resend({
     type: 'signup',
     email: email,
     options: {
-      emailRedirectTo: `${window.location.origin}/auth/confirm`,
+      emailRedirectTo: `${origin}/auth/confirm`,
     },
   });
+
   if (error) {
     console.error('Error resending confirmation email: ' + error.message);
     throw new Error(error.message);
@@ -102,7 +104,8 @@ export const resetPasswordforEmail = async (
   email: string,
   redirOrigin: string
 ) => {
-  const supabase = createClient();
+  // 👇 Added 'await' here
+  const supabase = await createClientServer();
   const { error, data } = await supabase.auth.resetPasswordForEmail(email, {
     redirectTo: `${redirOrigin}`,
   });
@@ -115,7 +118,8 @@ export const resetPasswordforEmail = async (
 };
 
 export const updatePasswordAfterReset = async (password: string) => {
-  const supabase = createClient();
+  // 👇 Added 'await' here
+  const supabase = await createClientServer();
   const { error, data } = await supabase.auth.updateUser({ password });
   if (error) {
     console.error('Error setting password: ' + error.message);

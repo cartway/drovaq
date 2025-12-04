@@ -70,10 +70,10 @@ const isActive = (path: string) => pathname === path; // or use startsWith
           {/* :  */}
           {/* ( */}
             <>
-              <Link href="/login">
+              <Link href="/auth/login">
                 <Button variant="ghost" className="transition-colors duration-200 hover:text-primary" data-testid="button-login">Log in</Button>
               </Link>
-              <Link href="/signup">
+              <Link href="/auth/signup">
                 <Button className="gap-2 cta-glow" data-testid="button-join-beta">
                   <Sparkles className="h-4 w-4" />
                   Join Beta

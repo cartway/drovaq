@@ -17,7 +17,7 @@ const Provider = ({
       disableTransitionOnChange>
       <ProgressProvider
         height='4px'
-        color={'#650bff'}
+        color={'#782A37'}
         options={{ showSpinner: false }}
         shallowRouting>
         {children}

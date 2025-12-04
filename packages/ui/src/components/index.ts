@@ -11,4 +11,9 @@ export * from "./Footer";
 export * from "./ui/slider"
 export * from "./Navigation";
 export * from "./ui/label";
+export * from "./ui/dialog"
+export * from "./ui/textarea"
+export * from "./ui/form"
+export * from "./ui/toast";
+export * from "./ui/toaster";
 // export { toaster } from './ui/toaster';
