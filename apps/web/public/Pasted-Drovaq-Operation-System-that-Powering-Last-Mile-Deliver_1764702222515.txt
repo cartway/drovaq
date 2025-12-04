@@ -1,0 +1,73 @@
+Drovaq: Operation System that Powering Last Mile Deliveries. 
+With Drovaq, Managing your Dispatch Company is now very easy. - I would Drova the OS that powers dispatch company. Drova was first used by Cartway, a dispatch company we founded, at scale we figured we need a lot of technical tools, most of which can’t be accessible - We had series of problems. 
+
+- How do I automatically take my deliveries?
+- How do I & my customers get to track our deliveries?  
+- How do I handle payments & confirmation? 
+- How do I manage my customer inventory?
+- How do I track and manage my inventory payment especially for PODs?
+- How do I manage my fleet? 
+- How do I many my fleet inventory? 
+- How do I scale? 
+- How do I manage my entire operations?
+
+You can see many “How dos”? That was exactly the problem we faced when we had between 10 - 20 bikes, we had plenty people but we couldn’t just delivery even as a dispatch company 🙂‍↔️
+
+Here come the solution: 
+A Tech solution that helps dispatch owner manger the operational efficiency of their business and also helps them gain visibility. 
+
+Impact: 
+- Operational Efficiency.
+- Close financial leakages backdoors.
+- Visibility as business can easily be listed online.
+- Reduce fraud. 
+- Inventory Management  
+
+Pricing 
+Beta User - ₦25,000 for unlimited access (Additional fee may apply for certain features) 
+
+Goal
+- Onbaord 100 dispatch company in First three months 
+
+Competitive analysis 
+- Industry knowlege: Drovaq team started with a dispatch company which also won the mobility company of the year, Ibadan Tech Expo which means there is a solid industry knowledge.    ___
+* Slide 1 Title
+* Drovaq Powering Last Mile Deliveries The Operating System for Dispatch Companies
+* 
+* Slide 2 The Problem
+* When a dispatch company grows beyond 10 to 20 bikes, operations break. We experienced this firsthand while building Cartway.
+* Common operational questions include:
+* How do I automatically receive and assign deliveries How do customers track their deliveries in real time How do I handle payments and confirmations How do I manage customer inventory How do I reconcile inventory payments especially POD How do I manage my fleet How do I manage fleet inventory How do I scale operations without confusion How do I manage everything end to end
+* The truth is simple. Most dispatch companies cannot scale because their systems cannot scale.
+* 
+* Slide 3 The Insight
+* The struggle is not caused by riders. It is caused by fragmented tools and lack of visibility.
+* At scale:
+* Processes become manual Revenue leakages grow Fraud becomes easier Inventory becomes disorganised Customer experience becomes inconsistent Owners lose visibility and control
+* We needed one system that handles everything in one place.
+* 
+* Slide 4 The Solution
+* Drovaq is the Operating System for dispatch companies. A single platform that brings structure, automation and visibility to the entire business.
+* Drovaq enables owners to manage:
+* Operational efficiency Real time customer tracking Payments and confirmation flows Customer inventory POD and inventory payment reconciliation Fleet performance Fleet inventory Full operations in one place
+* Drovaq makes running a dispatch company predictable and scalable.
+* 
+* Slide 5 Product Impact
+* Improved operational efficiency across the entire business Closed financial leakages Reduced fraud Full visibility for owners and customers Better inventory accuracy A system designed to grow with your fleet Online presence for discovery and credibility
+* 
+* Slide 6 Pricing
+* Beta Launch Access NGN 25,000 for unlimited usage Additional fees may apply for selected advanced features
+* 
+* Slide 7 Market Launch Goal
+* Onboard 100 dispatch companies in the first 3 months Unlock strong community adoption Drive referrals through early success stories Partner with existing dispatch networks Position Drovaq as the industry standard
+* 
+* Slide 8 Competitive Advantage
+* The team has real industry experience Drovaq was first used inside Cartway Cartway won Mobility Company of the Year at the Ibadan Tech Expo We built the product from real daily operations We understand every problem dispatch owners face Drovaq is built from lived experience, not assumptions
+* 
+* Slide 9 Why Drovaq
+* Developed inside a real dispatch operation Proven in real scale conditions Simple for owners and operators Powerful enough for large fleets Built to unify operations and eliminate leakages Built to help companies scale with confidence
+* 
+* Slide 10 Call to Action
+* Join the first 100 companies Get unlimited access at the beta price Build a dispatch business that can scale confidently
+* Start with Drovaq The Operating System for Dispatch Companies
+- 

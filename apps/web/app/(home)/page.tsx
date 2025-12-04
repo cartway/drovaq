@@ -3,11 +3,11 @@ import { Metadata } from 'next';
 import { LandingPageContent } from '@/contents/home/landing';
 
 export const metadata: Metadata = {
-  title: 'Login | Drovaq',
+  title: 'Drovaq - The Operating System for Dispatch Companies',
 };
 
-const LoginPage = ({ params, searchParams }: PageProps<'/'>) => {
+const HomePage = ({ params, searchParams }: PageProps<'/'>) => {
   return <LandingPageContent />;
 };
 
-export default LoginPage;
+export default HomePage;
