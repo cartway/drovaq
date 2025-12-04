@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import LoginPageContent from '@/contents/auth';
+import { LoginPageContent } from '@/contents/auth/login';
 
 export const metadata: Metadata = {
   title: 'Login | Drovaq',
