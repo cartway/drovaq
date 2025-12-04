@@ -510,7 +510,7 @@ export const ImpactPageContent = () => {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <a href='/api/login' className='w-full'>
+                  <Link href='/auth/login' className='w-full'>
                     <Button
                       size='lg'
                       className='w-full gap-2'
@@ -519,7 +519,7 @@ export const ImpactPageContent = () => {
                       Join Beta & Start Saving{' '}
                       <ArrowRight className='h-4 w-4' />
                     </Button>
-                  </a>
+                  </Link>
                 </CardFooter>
               </Card>
             </motion.div>
@@ -548,7 +548,7 @@ export const ImpactPageContent = () => {
               price. Grow your fleet with systems that scale.
             </p>
             <div className='flex flex-col justify-center gap-4 sm:flex-row'>
-              <a href='/api/login'>
+              <Link href='/auth/login'>
                 <Button
                   size='lg'
                   variant='secondary'
@@ -557,7 +557,7 @@ export const ImpactPageContent = () => {
                   <Sparkles className='h-4 w-4' />
                   Join Beta Now <ArrowRight className='h-4 w-4' />
                 </Button>
-              </a>
+              </Link>
               <Link href='/pricing'>
                 <Button
                   size='lg'

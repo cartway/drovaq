@@ -256,7 +256,7 @@ export const LandingPageContent = () => {
               </p>
 
               <div className='mt-2 flex flex-col gap-4 sm:flex-row'>
-                <a href='/api/login'>
+                <Link href='/auth/login'>
                   <Button
                     size='lg'
                     className='cta-glow w-full gap-2 sm:w-auto'
@@ -264,7 +264,7 @@ export const LandingPageContent = () => {
                     <Sparkles className='h-4 w-4' />
                     Join Beta <ArrowRight className='h-4 w-4' />
                   </Button>
-                </a>
+                </Link>
                 <a href='/public-objects/drovaq-product-brief.pdf' download>
                   <Button
                     size='lg'
@@ -755,7 +755,7 @@ export const LandingPageContent = () => {
                   ))}
                 </div>
 
-                <a href='/api/login' className='block'>
+                <Link href='/auth/login' className='block'>
                   <Button
                     size='lg'
                     className='cta-glow w-full gap-2 text-lg'
@@ -763,7 +763,7 @@ export const LandingPageContent = () => {
                     <Sparkles className='h-5 w-5' />
                     Join Beta Now <ArrowRight className='h-5 w-5' />
                   </Button>
-                </a>
+                </Link>
 
                 <p className='text-muted-foreground mt-4 text-sm'>
                   No credit card required to start
@@ -920,7 +920,7 @@ export const LandingPageContent = () => {
               price. Grow your fleet with systems that scale.
             </p>
             <div className='flex flex-col justify-center gap-4 sm:flex-row'>
-              <a href='/api/login'>
+              <Link href='/api/login'>
                 <Button
                   size='lg'
                   variant='secondary'
@@ -929,7 +929,7 @@ export const LandingPageContent = () => {
                   <Sparkles className='h-4 w-4' />
                   Join Beta Now <ArrowRight className='h-4 w-4' />
                 </Button>
-              </a>
+              </Link>
               <Link href={'/pricing'}>
                 <Button
                   size='lg'
