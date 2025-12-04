@@ -138,12 +138,12 @@ const isActive = (path: string) => pathname === path; // or use startsWith
                 {/* )  */}
                 : (
                   <>
-                    <Link href="/login" onClick={() => setMobileMenuOpen(false)}>
+                    <Link href="/auth/login" onClick={() => setMobileMenuOpen(false)}>
                       <Button variant="outline" className="w-full" data-testid="button-mobile-login">
                         Log in
                       </Button>
                     </Link>
-                    <Link href="/signup" onClick={() => setMobileMenuOpen(false)}>
+                    <Link href="/auth/signup" onClick={() => setMobileMenuOpen(false)}>
                       <Button className="w-full gap-2 cta-glow" data-testid="button-mobile-join-beta">
                         <Sparkles className="h-4 w-4" />
                         Join Beta
