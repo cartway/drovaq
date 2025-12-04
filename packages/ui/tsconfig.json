@@ -1,16 +1,29 @@
 {
   "extends": "@repo/typescript-config/react-library.json",
   "compilerOptions": {
-    "rootDir": "src",          // 👈 specify source folder
-    "outDir": "dist",          // 👈 compiled files go here
-    "declaration": true,
-    "declarationMap": true,
+    "outDir": "dist",
+    "rootDir": "src", 
     "baseUrl": ".",
     "paths": {
-      "@repo/ui": ["src/index.ts"],
-      "@repo/ui/*": ["src/*"]
+      "@repo/ui": ["./src/index.ts"],
+      "@repo/ui/*": ["./src/*"]
     }
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
 }
+
+
+// {
+//   "extends": "@repo/typescript-config/react-library.json",
+//   "compilerOptions": {       
+//     "outDir": "dist",        
+//     "baseUrl": ".",
+//     "paths": {
+//       "@repo/ui": ["packages/ui/src/index.ts"],
+//       "@repo/ui/*": ["packages/ui/src/*"]
+//     }
+//   },
+//   "include": ["src"],
+//   "exclude": ["node_modules", "dist"]
+// }
