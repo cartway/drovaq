@@ -29,3 +29,4 @@ export * as IconTfi from "react-icons/tfi";
 export * as IconTi from "react-icons/ti";
 export * as IconVsc from "react-icons/vsc";
 export * as IconWi from "react-icons/wi";
+export * from "lucide-react";

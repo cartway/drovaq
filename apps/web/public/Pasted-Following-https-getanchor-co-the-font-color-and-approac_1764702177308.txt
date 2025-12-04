@@ -1,0 +1,55 @@
+Following - https://getanchor.co/, the font, color and approach. Build the following pages.
+
+Home Page - Download Product brief to understand our business
+Company for About Us & Contact
+Proof
+Talk to Sales
+Pricing Page & Amount Saved.
+Term of Use
+Career - Apply as Interns for Roles
+Auth Pages. Once I login, I should just see a dashboard page to know it works.
+App Needed
+
+Dispatch Owner
+Customer & Vendor
+Agent & Partner
+Riders App
+Stack to Use:
+Next JS,
+Taiwland CSS
+Ark UI
+
+Addition Brief :
+Drovaq: Operation System that Powering Last Mile Deliveries.
+With Drovaq, Managing your Dispatch Company is now very easy. - I would Drova the OS that powers dispatch company. Drova was first used by Cartway, a dispatch company we founded, at scale we figured we need a lot of technical tools, most of which can’t be accessible - We had series of problems.
+
+How do I automatically take my deliveries?
+How do I & my customers get to track our deliveries?
+How do I handle payments & confirmation?
+How do I manage my customer inventory?
+How do I track and manage my inventory payment especially for PODs?
+How do I manage my fleet?
+How do I many my fleet inventory?
+How do I scale?
+How do I manage my entire operations?
+You can see many “How dos”? That was exactly the problem we faced when we had between 10 - 20 bikes, we had plenty people but we couldn’t just delivery even as a dispatch company 🙂‍↔️
+
+Here come the solution:
+A Tech solution that helps dispatch owner manger the operational efficiency of their business and also helps them gain visibility.
+
+Impact:
+
+Operational Efficiency.
+Close financial leakages backdoors.
+Visibility as business can easily be listed online.
+Reduce fraud.
+Inventory Management
+Pricing
+Beta User - ₦25,000 for unlimited access (Additional fee may apply for certain features)
+
+Goal
+
+Onbaord 100 dispatch company in First three months
+Competitive analysis
+
+Industry knowlege: Drovaq team started with a dispatch company which also won the mobility company of the year, Ibadan Tech Expo which means there is a solid industry knowledge.

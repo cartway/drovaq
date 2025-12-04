@@ -1,0 +1,120 @@
+Slide 1
+Title
+
+Drovaq
+Powering Last Mile Deliveries
+The Operating System for Dispatch Companies
+
+Slide 2
+The Problem
+
+When a dispatch company grows beyond 10 to 20 bikes, operations break.
+We experienced this firsthand while building Cartway.
+
+Common operational questions include:
+
+How do I automatically receive and assign deliveries
+How do customers track their deliveries in real time
+How do I handle payments and confirmations
+How do I manage customer inventory
+How do I reconcile inventory payments especially POD
+How do I manage my fleet
+How do I manage fleet inventory
+How do I scale operations without confusion
+How do I manage everything end to end
+
+The truth is simple.
+Most dispatch companies cannot scale because their systems cannot scale.
+
+Slide 3
+The Insight
+
+The struggle is not caused by riders.
+It is caused by fragmented tools and lack of visibility.
+
+At scale:
+
+Processes become manual
+Revenue leakages grow
+Fraud becomes easier
+Inventory becomes disorganised
+Customer experience becomes inconsistent
+Owners lose visibility and control
+
+We needed one system that handles everything in one place.
+
+Slide 4
+The Solution
+
+Drovaq is the Operating System for dispatch companies.
+A single platform that brings structure, automation and visibility to the entire business.
+
+Drovaq enables owners to manage:
+
+Operational efficiency
+Real time customer tracking
+Payments and confirmation flows
+Customer inventory
+POD and inventory payment reconciliation
+Fleet performance
+Fleet inventory
+Full operations in one place
+
+Drovaq makes running a dispatch company predictable and scalable.
+
+Slide 5
+Product Impact
+
+Improved operational efficiency across the entire business
+Closed financial leakages
+Reduced fraud
+Full visibility for owners and customers
+Better inventory accuracy
+A system designed to grow with your fleet
+Online presence for discovery and credibility
+
+Slide 6
+Pricing
+
+Beta Launch Access
+NGN 25,000 for unlimited usage
+Additional fees may apply for selected advanced features
+
+Slide 7
+Market Launch Goal
+
+Onboard 100 dispatch companies in the first 3 months
+Unlock strong community adoption
+Drive referrals through early success stories
+Partner with existing dispatch networks
+Position Drovaq as the industry standard
+
+Slide 8
+Competitive Advantage
+
+The team has real industry experience
+Drovaq was first used inside Cartway
+Cartway won Mobility Company of the Year at the Ibadan Tech Expo
+We built the product from real daily operations
+We understand every problem dispatch owners face
+Drovaq is built from lived experience, not assumptions
+
+Slide 9
+Why Drovaq
+
+Developed inside a real dispatch operation
+Proven in real scale conditions
+Simple for owners and operators
+Powerful enough for large fleets
+Built to unify operations and eliminate leakages
+Built to help companies scale with confidence
+
+Slide 10
+Call to Action
+
+Join the first 100 companies
+Get unlimited access at the beta price
+Build a dispatch business that can scale confidently
+
+Start with Drovaq
+The Operating System for Dispatch Companies
