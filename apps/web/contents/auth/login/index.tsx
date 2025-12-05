@@ -3,7 +3,7 @@
 // import { useMutation } from '@tanstack/react-query';
 
 // import { apiRequest, queryClient } from '@/lib/queryClient';
-import { jwtDecode, motion, useInView, useRouter } from '@repo/ui';
+import { motion, useInView, useRouter } from '@repo/ui';
 import {
   Button,
   Card,
@@ -42,6 +42,7 @@ import {
   resendConfirmationEmail,
   SupabaseJWTPayload,
 } from '@repo/ui/services';
+import { jwtDecode } from 'jwt-decode';
 
 import Link from 'next/link';
 import React, { FC, useState } from 'react';
@@ -51,52 +52,65 @@ export const LoginPageContent = () => {
   const { toast } = useToast();
   const [isShowPassword, setIsShowPassword] = useState(false);
 
-  const onSubmit = async (data: LoginType) => {
-    try {
-      const user = await logIn(data);
-      toast({
-        variant: 'default',
-        title: '✅ Logged in',
-      });
+  const onSubmit = async (formData: LoginType) => {
+    const res = await logIn(formData);
 
-      const { user_role } = jwtDecode<SupabaseJWTPayload>(
-        user.session.access_token
-      );
-      if (
-        user_role === 'customer' ||
-        user_role === 'vendor' ||
-        user_role === 'rider'
-      ) {
-        router.push(`/${user_role}/home`);
-      } else {
-        router.push('/dashboard');
-      }
-    } catch (error: any) {
-      console.log(error);
-      if (error.message === 'Email not confirmed') {
+    if (!res.success) {
+      // Special case - email not confirmed
+      if (res.message === 'Email not confirmed') {
         toast({
           title: '❌ Failed',
-          description: error.message ? error.message : 'Email not confirmed',
+          description: res.message,
           variant: 'destructive',
           duration: 10000,
           action: (
             <ToastAction
               altText='Resend'
               onClick={() =>
-                resendConfirmationEmail(data.email, window.location.origin)
-              } // 👈 Pass origin here
-            >
+                resendConfirmationEmail(formData.email, window.location.origin)
+              }>
               Resend
             </ToastAction>
           ),
         });
-      } else {
-        toast({
-          title: '❌ Failed',
-          description: error.message ? error.message : 'Failed to login',
-          variant: 'destructive',
-        });
+        return;
       }
+
+      // General auth failure
+      toast({
+        title: '❌ Failed',
+        description: res.message || 'Failed to login',
+        variant: 'destructive',
+      });
+
+      return;
+    }
+
+    // =====================
+    // SUCCESSFUL LOGIN
+    // =====================
+    const user = res.session;
+
+    toast({
+      variant: 'default',
+      title: '✅ Logged in',
+    });
+    if (!user?.session?.access_token) {
+      throw new Error('User is ot logged in');
+    }
+
+    const { user_role } = jwtDecode<SupabaseJWTPayload>(
+      user.session.access_token
+    );
+
+    if (
+      user_role === 'customer' ||
+      user_role === 'vendor' ||
+      user_role === 'rider'
+    ) {
+      router.push(`/${user_role}/home`);
+    } else {
+      router.push('/dashboard');
     }
   };
   const form = useForm<LoginType>({
