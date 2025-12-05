@@ -185,7 +185,7 @@ export const LoginPageContent = () => {
                       <div className='flex items-center justify-between'>
                         <FormLabel>Password</FormLabel>
                         <Link
-                          href='/forgot-password'
+                          href='/auth/forgot-password'
                           className='text-primary text-sm hover:underline'
                           data-testid='link-forgot-password'>
                           Forgot password?

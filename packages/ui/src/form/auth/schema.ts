@@ -19,6 +19,12 @@ export const signupFormSchema = z.object({
 });
 export type SignupFormType = z.infer<typeof signupFormSchema>;
 
+export const forgotPasswordSchema = z.object({
+  email: z.email("Invalid email address"),
+});
+
+export type ForgotPasswordFormType = z.infer<typeof forgotPasswordSchema>
+
 export const changePasswordFormSchema = z.object({
   oldPassword: z.string().min(1, 'required'),
   newPassword: z.string().min(1, 'required'),
