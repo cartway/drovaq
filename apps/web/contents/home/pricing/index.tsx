@@ -142,7 +142,7 @@ export const PricingPageContent = () => {
                 </div>
               </CardContent>
               <CardFooter className='flex flex-col gap-4 pb-8'>
-                <a href='/api/login' className='w-full'>
+                <Link href='/auth/login' className='w-full'>
                   <Button
                     size='lg'
                     className='cta-glow w-full cursor-pointer gap-2 text-lg'
@@ -150,7 +150,7 @@ export const PricingPageContent = () => {
                     <Sparkles className='h-5 w-5' />
                     Join Beta <ArrowRight className='h-5 w-5' />
                   </Button>
-                </a>
+                </Link>
                 <p className='text-muted-foreground text-center text-xs'>
                   No credit card required to start
                 </p>
@@ -312,7 +312,7 @@ export const PricingPageContent = () => {
               Get unlimited access at the beta price. Build a dispatch business
               that can scale confidently.
             </p>
-            <a href='/api/login'>
+            <Link href='/auth/login'>
               <Button
                 size='lg'
                 variant='secondary'
@@ -321,7 +321,7 @@ export const PricingPageContent = () => {
                 <Sparkles className='h-4 w-4' />
                 Join Beta Now <ArrowRight className='h-4 w-4' />
               </Button>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
