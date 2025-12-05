@@ -60,6 +60,29 @@ export const signUp = async (
   }
 };
 
+// export const logIn = async ({
+//   email,
+//   password,
+// }: {
+//   email: string;
+//   password: string;
+// }) => {
+//   // 👇 Added 'await' here
+//   const supabase = await createClientServer();
+//   const { error, data } = await supabase.auth.signInWithPassword({
+//     email,
+//     password,
+//   });
+
+//   if (error) {
+//     console.log(error, "ROOROOOOU")
+//     console.error(error.code + ' ' + error.message);
+//     throw new Error(error.message);
+//   }
+
+//   return data;
+// };
+
 export const logIn = async ({
   email,
   password,
@@ -67,20 +90,34 @@ export const logIn = async ({
   email: string;
   password: string;
 }) => {
-  // 👇 Added 'await' here
   const supabase = await createClientServer();
-  const { error, data } = await supabase.auth.signInWithPassword({
+
+  const { data: authData, error } = await supabase.auth.signInWithPassword({
     email,
     password,
   });
 
   if (error) {
-    console.error(error.code + ' ' + error.message);
-    throw new Error(error.message);
+    // Log the real Supabase error
+    console.error("SUPABASE LOGIN ERROR →", error.message);
+
+    // Return gracefully instead of throwing
+    return {
+      success: false,
+      message: error.message,
+      code: error.code,
+      session: null,
+    };
   }
 
-  return data;
+  return {
+    success: true,
+    message: "Logged in",
+    code: null,
+    session: authData,
+  };
 };
+
 
 export const resendConfirmationEmail = async (email: string, origin: string) => {
   // 👇 Added 'await' here
