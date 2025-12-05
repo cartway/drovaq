@@ -16,7 +16,7 @@ const HomePage = async ({ params, searchParams }: PageProps<'/'>) => {
   } = await supabase.auth.getSession();
 
   if (!session) {
-    <LandingPageContent />;
+    return <LandingPageContent />;
   }
   return <HomePageContent />;
 };
